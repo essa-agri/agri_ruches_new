@@ -1,0 +1,9 @@
+{
+  "coreApp": {
+    "DeviceStatus": {
+      "null": "",
+      "OFFLINE": "OFFLINE",
+      "ONLINE": "ONLINE"
+    }
+  }
+}

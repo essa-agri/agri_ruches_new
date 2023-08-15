@@ -1,0 +1,29 @@
+{
+  "applications": ["core", "sensoring"],
+  "changelogDate": "20230805082706",
+  "clientRootFolder": "sensoring",
+  "databaseType": "mongodb",
+  "entityTableName": "device",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rucheId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "DeviceStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "OFFLINE,ONLINE"
+    }
+  ],
+  "microserviceName": "sensoring",
+  "name": "Device",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

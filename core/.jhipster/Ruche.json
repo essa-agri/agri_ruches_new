@@ -1,0 +1,37 @@
+{
+  "applications": ["core", "management"],
+  "changelogDate": "20230805083206",
+  "clientRootFolder": "management",
+  "databaseType": "mongodb",
+  "entityTableName": "ruche",
+  "fields": [
+    {
+      "fieldName": "rucheName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "indentifiant",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rucherId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceId",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "management",
+  "name": "Ruche",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

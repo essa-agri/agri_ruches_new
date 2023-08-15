@@ -1,0 +1,30 @@
+{
+  "coreApp": {
+    "sensoringDevice": {
+      "home": {
+        "title": "Devices",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Device",
+        "createOrEditLabel": "Créer ou éditer un Device",
+        "notFound": "Aucun Device trouvé"
+      },
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Device {{ id }} ?"
+      },
+      "detail": {
+        "title": "Device"
+      },
+      "id": "ID",
+      "name": "Name",
+      "rucheId": "Ruche Id",
+      "status": "Status"
+    }
+  },
+  "sensoringApp": {
+    "sensoringDevice": {
+      "created": "Un nouveau Device a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Device avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Device avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

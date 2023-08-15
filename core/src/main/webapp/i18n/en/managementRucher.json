@@ -1,0 +1,32 @@
+{
+  "coreApp": {
+    "managementRucher": {
+      "home": {
+        "title": "Ruchers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Rucher",
+        "createOrEditLabel": "Create or edit a Rucher",
+        "notFound": "No Ruchers found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Rucher {{ id }}?"
+      },
+      "detail": {
+        "title": "Rucher"
+      },
+      "id": "ID",
+      "rucheName": "Ruche Name",
+      "adresse": "Adresse",
+      "description": "Description",
+      "userId": "User Id",
+      "listRuches": "List Ruches"
+    }
+  },
+  "managementApp": {
+    "managementRucher": {
+      "created": "A new Rucher is created with identifier {{ param }}",
+      "updated": "A Rucher is updated with identifier {{ param }}",
+      "deleted": "A Rucher is deleted with identifier {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "coreApp": {
+    "sensoringStream": {
+      "home": {
+        "title": "Streams",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Stream",
+        "createOrEditLabel": "Créer ou éditer un Stream",
+        "notFound": "Aucun Stream trouvé"
+      },
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Stream {{ id }} ?"
+      },
+      "detail": {
+        "title": "Stream"
+      },
+      "id": "ID",
+      "deviceId": "Device Id",
+      "params": "Params",
+      "createdAt": "Created At"
+    }
+  },
+  "sensoringApp": {
+    "sensoringStream": {
+      "created": "Un nouveau Stream a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Stream avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Stream avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

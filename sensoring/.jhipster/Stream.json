@@ -1,0 +1,29 @@
+{
+  "applications": ["core", "sensoring"],
+  "changelogDate": "20230805082906",
+  "clientRootFolder": "sensoring",
+  "databaseType": "mongodb",
+  "entityTableName": "stream",
+  "fields": [
+    {
+      "fieldName": "deviceId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "params",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "microserviceName": "sensoring",
+  "name": "Stream",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

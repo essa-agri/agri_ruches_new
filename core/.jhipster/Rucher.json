@@ -1,0 +1,38 @@
+{
+  "applications": ["core", "management"],
+  "changelogDate": "20230805083106",
+  "clientRootFolder": "management",
+  "databaseType": "mongodb",
+  "entityTableName": "rucher",
+  "fields": [
+    {
+      "fieldName": "rucheName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "listRuches",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "management",
+  "name": "Rucher",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,32 @@
+{
+  "coreApp": {
+    "managementRucher": {
+      "home": {
+        "title": "Ruchers",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Rucher",
+        "createOrEditLabel": "Créer ou éditer un Rucher",
+        "notFound": "Aucun Rucher trouvé"
+      },
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Rucher {{ id }} ?"
+      },
+      "detail": {
+        "title": "Rucher"
+      },
+      "id": "ID",
+      "rucheName": "Ruche Name",
+      "adresse": "Adresse",
+      "description": "Description",
+      "userId": "User Id",
+      "listRuches": "List Ruches"
+    }
+  },
+  "managementApp": {
+    "managementRucher": {
+      "created": "Un nouveau Rucher a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Rucher avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Rucher avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

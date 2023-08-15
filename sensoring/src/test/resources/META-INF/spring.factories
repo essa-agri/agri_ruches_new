@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = com.agri40.filahati.\
+    sensoring.config.TestContainersSpringContextCustomizerFactory

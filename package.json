@@ -1,0 +1,35 @@
+{
+  "workspaces": {
+    "packages": [
+      "core",
+      "management",
+      "sensoring"
+    ]
+  },
+  "scripts": {
+    "backend:build-cache": "concurrently npm:backend:build-cache:core npm:backend:build-cache:management npm:backend:build-cache:sensoring",
+    "backend:build-cache:core": "npm run backend:build-cache --workspace core --if-present",
+    "backend:build-cache:management": "npm run backend:build-cache --workspace management --if-present",
+    "backend:build-cache:sensoring": "npm run backend:build-cache --workspace sensoring --if-present",
+    "ci:backend:test": "npm run ci:backend:test --workspaces --if-present",
+    "ci:e2e:package": "npm run ci:docker:build --workspaces --if-present && npm run java:docker --workspaces --if-present",
+    "ci:e2e:run": "npm run e2e:headless --workspaces --if-present",
+    "ci:frontend:test": "npm run ci:frontend:test --workspaces --if-present",
+    "java:docker": "concurrently npm:java:docker:core npm:java:docker:management npm:java:docker:sensoring",
+    "java:docker:arm64": "concurrently npm:java:docker:arm64:core npm:java:docker:arm64:management npm:java:docker:arm64:sensoring",
+    "java:docker:arm64:core": "npm run java:docker:arm64 --workspace core --if-present",
+    "java:docker:arm64:management": "npm run java:docker:arm64 --workspace management --if-present",
+    "java:docker:arm64:sensoring": "npm run java:docker:arm64 --workspace sensoring --if-present",
+    "java:docker:core": "npm run java:docker --workspace core --if-present",
+    "java:docker:management": "npm run java:docker --workspace management --if-present",
+    "java:docker:sensoring": "npm run java:docker --workspace sensoring --if-present",
+    "watch": "concurrently npm:watch:core npm:watch:management npm:watch:sensoring",
+    "watch:core": "npm run watch --workspace core --if-present",
+    "watch:management": "npm run watch --workspace management --if-present",
+    "watch:sensoring": "npm run watch --workspace sensoring --if-present",
+    "webapp:test": "npm run webapp:test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.0"
+  }
+}

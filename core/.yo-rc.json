@@ -1,0 +1,55 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "gateway",
+    "applications": {
+      "management": {
+        "applicationIndex": 1,
+        "serverPort": "8081"
+      },
+      "sensoring": {
+        "applicationIndex": 2,
+        "serverPort": "8082"
+      }
+    },
+    "authenticationType": "jwt",
+    "baseName": "core",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1691223966851,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 9060,
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": ["Rucher", "Ruche", "Stream", "Device"],
+    "entitySuffix": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "8.0.0-beta.2",
+    "jwtSecretKey": "Y2FjM2IwYzRlOWJhOTFkNTRiMGQ1YzYxNzJiMTBmMDRkOTUzODcxMTkyNWMzMDVlMzQyMTlkZDcyMDNlMzIwZWQyYjI3NmYwZDM0YzAwYTZlNzYwMWY3Yjc2ZWI4NWMxNmQxNDRkYmI3NDg5NTNlOTIwNTk4Y2E0MzA2NGVmYmM=",
+    "languages": ["en", "fr", "ar-ly"],
+    "lastLiquibaseTimestamp": 1691224446000,
+    "messageBroker": "no",
+    "nativeLanguage": "en",
+    "packageFolder": "com/agri40/ruche/core",
+    "packageName": "com.agri40.ruche.core",
+    "pages": [],
+    "prodDatabaseType": "mongodb",
+    "reactive": true,
+    "searchEngine": "no",
+    "serverPort": "8080",
+    "serviceDiscoveryType": "eureka",
+    "skipCheckLengthOfIdentifier": false,
+    "skipClient": false,
+    "skipFakeData": false,
+    "skipUserManagement": false,
+    "websocket": "no",
+    "withAdminUi": true
+  }
+}

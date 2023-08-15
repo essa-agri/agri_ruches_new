@@ -1,0 +1,32 @@
+{
+  "coreApp": {
+    "managementRuche": {
+      "home": {
+        "title": "Ruches",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Ruche",
+        "createOrEditLabel": "Créer ou éditer un Ruche",
+        "notFound": "Aucun Ruche trouvé"
+      },
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Ruche {{ id }} ?"
+      },
+      "detail": {
+        "title": "Ruche"
+      },
+      "id": "ID",
+      "rucheName": "Ruche Name",
+      "indentifiant": "Indentifiant",
+      "description": "Description",
+      "rucherId": "Rucher Id",
+      "deviceId": "Device Id"
+    }
+  },
+  "managementApp": {
+    "managementRuche": {
+      "created": "Un nouveau Ruche a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Ruche avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Ruche avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

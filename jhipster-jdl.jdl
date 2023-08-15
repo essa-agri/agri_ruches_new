@@ -1,0 +1,155 @@
+/*
+** Core Application
+*/
+application {
+	config {
+		baseName core
+		packageName com.agri40.ruche.core
+		applicationType gateway
+		authenticationType jwt
+		buildTool maven
+		clientFramework react
+        databaseType mongodb
+		serviceDiscoveryType eureka
+		nativeLanguage en,
+		languages [en, fr, ar-ly],
+        serverPort 8080
+	}
+	entities *
+}
+
+/*
+** Managment Application
+*/
+application {
+	config {
+		baseName management
+		applicationType microservice
+		packageName com.agri40.filahati.management
+		serviceDiscoveryType eureka
+		authenticationType jwt
+		databaseType mongodb
+		buildTool maven
+		serverPort 8081
+	}
+	entities Ruche , Rucher
+}
+
+/*
+** Sensoring Application
+*/
+
+application {
+	config {
+		baseName sensoring
+		applicationType microservice
+		packageName com.agri40.filahati.sensoring
+		serviceDiscoveryType eureka
+		authenticationType jwt
+		databaseType mongodb
+		buildTool maven
+		serverPort 8082
+	}
+	entities Device , Stream 
+}
+/*
+** Sensoring Application
+*/
+
+application {
+	config {
+		baseName notification
+		applicationType microservice
+		packageName com.agri40.filahati.notification
+		serviceDiscoveryType eureka
+		authenticationType jwt
+		databaseType mongodb
+		buildTool maven
+		serverPort 8083
+	}
+	entities Alert , Notification
+}
+
+/* management  */
+
+entity Rucher{
+rucherName String required
+adresse String required
+description String required
+userId String required
+listRuches String // list ruches 
+}
+
+
+entity Ruche{
+rucheName String required
+indentifiant String required unique
+description String required
+rucherId String // rucher
+deviceId String
+}
+
+
+
+/* sensoring  */ 
+
+
+entity Stream{
+deviceId String required
+params String 
+createdAt Long required
+}
+
+entity Device{
+name String required
+rucheId String //
+status DeviceStatus required
+}
+
+// Device Enum
+enum DeviceStatus{
+	OFFLINE , ONLINE
+}
+
+/* Notification  */
+
+entity Alert{
+type AlertType required
+alertSi AlertSi required
+conditionType AlertConditionType required
+valeur Float required
+variation Float 
+statut Boolean required 
+rucheId String required
+lastStream String  // map< String , ? >
+}
+
+enum AlertType{
+LIMIT , VARIATION
+}
+
+enum AlertSi{
+POIDS , TEMPERATURE , HUMIDITE
+}
+
+enum AlertConditionType{
+INFERIEURE , SUPERIEURE , EGALE , AUGMENTE , DIMINUER
+}
+
+entity Notification{
+description String required
+rucheName String required
+rucherName String required
+createdAt Long required // date
+}
+
+//
+service * with serviceClass except User
+service * with serviceImpl except User
+
+microservice Rucher ,  Ruche with management
+microservice Stream ,  Device with sensoring
+microservice Alert , Notification with notification 
+
+
+
